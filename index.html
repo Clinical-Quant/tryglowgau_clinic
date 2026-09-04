@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Aurum Aesthetics is a premium aesthetic clinic in the cloud — a tasteful, restrained space where artistry meets aesthetics. Request a consultation today.">
-    <title>Aurum Aesthetics — Where artistry meets aesthetics</title>
+    <meta name="description" content="Aurum Aesthetics is a considered aesthetic clinic in Chicago offering injectables, skin rejuvenation, and body treatments. Three locations across the city. Request a consultation.">
+    <title>Aurum Aesthetics — Where artistry meets aesthetics · Chicago</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="canonical" href="https://tryglowgau.com/">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%97%8E%3C/text%3E%3C/svg%3E">
-    <meta property="og:title" content="Aurum Aesthetics">
-    <meta property="og:description" content="Where artistry meets aesthetics. A premium aesthetic clinic crafted for clients who value considered care.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tryglowgau.com/">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -31,7 +26,8 @@
 
         <nav id="primary-nav" class="main-nav" aria-label="Primary">
             <a href="index.html" class="is-current">Home</a>
-            <a href="treatments.html">Treatments</a>
+            <a href="treatments/index.html">Treatments</a>
+            <a href="shop.html">Products</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="disclaimer.html">About this Demo</a>
@@ -43,182 +39,283 @@
 
 <main id="main">
 
-    <!-- ===================== HERO ===================== -->
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
     <section class="hero hero--image">
         <img class="hero__bg" src="assets/hero-home-1600x900.jpg" alt="" aria-hidden="true">
+        <div class="hero__overlay"></div>
         <div class="container">
-            <span class="eyebrow">A Premium Aesthetic Clinic</span>
-            <h1>Where artistry meets aesthetics.</h1>
-            <p>A considered approach to aesthetic care &mdash; crafted for clients who value tailored treatment, transparent conversation, and an unhurried experience.</p>
-            <div class="hero-actions">
-                <a href="contact.html" class="cta-button">Request a Consultation</a>
-                <a href="treatments.html" class="cta-button cta-button--ghost">Explore Treatments</a>
+            <div class="hero__inner">
+                <span class="eyebrow eyebrow--light">Aesthetic medicine · Chicago</span>
+                <h1 class="hero__title">Where artistry meets aesthetics.</h1>
+                <p class="hero__lead">A considered approach to aesthetic care — crafted for clients who value tailored treatment, transparent conversation, and an unhurried experience.</p>
+                <div class="hero__actions">
+                    <a href="contact.html" class="cta-button cta-button--invert">Request a Consultation</a>
+                    <a href="treatments/index.html" class="cta-button cta-button--ghost">Explore Treatments</a>
+                </div>
+                <ul class="hero__meta" aria-label="Clinic details">
+                    <li><strong>Three</strong> Chicago locations</li>
+                    <li>Licensed clinical team</li>
+                    <li>Free initial consultation</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- ===================== INTRO ===================== -->
+    <!-- =========================================================
+         WHAT WE ENHANCE — the 6-region selector (modeled on real medspas)
+         ========================================================= -->
     <section class="section-light">
-        <div class="container">
-            <div style="max-width: 760px; margin: 0 auto; text-align: center;">
-                <span class="eyebrow">Our Approach</span>
-                <h2 style="margin-top: 0;">Crafted, never rushed.</h2>
-                <p class="lead lead--center">At Aurum, every visit begins with conversation. We listen carefully, recommend only what serves your aesthetic goals, and walk you through each step so you feel informed and at ease.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== TREATMENT PILLARS ===================== -->
-    <section class="section-alt">
         <div class="container">
             <div class="section-head">
                 <span class="eyebrow">Treatment Areas</span>
-                <h2>Three disciplines, one standard of care.</h2>
-                <p>Every treatment at Aurum begins with a thorough consultation. We focus on outcomes that look natural and feel like you &mdash; only refreshed.</p>
+                <h2>What would you like to enhance?</h2>
+                <p>We treat the face and body in six regions — each one supported by an experienced clinical team and a treatment plan designed around your individual goals. Every plan begins with a conversation, never a sales pitch.</p>
+            </div>
+
+            <div class="region-grid">
+                <a class="region-card" href="treatments/forehead-eyes.html">
+                    <div class="region-card__icon" aria-hidden="true">◐</div>
+                    <h3 class="region-card__title">Forehead &amp; Eyes</h3>
+                    <p class="region-card__copy">Crow's feet, frown lines, forehead lines, bunny lines, and brow position. Neuromodulator-based treatments tailored to your muscle pattern.</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+                <a class="region-card" href="treatments/cheeks-jawline.html">
+                    <div class="region-card__icon" aria-hidden="true">◑</div>
+                    <h3 class="region-card__title">Cheeks &amp; Jawline</h3>
+                    <p class="region-card__copy">Volume restoration, contour refinement, submental fat, and masseter reduction. A measured approach to facial balance.</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+                <a class="region-card" href="treatments/lips.html">
+                    <div class="region-card__icon" aria-hidden="true">◓</div>
+                    <h3 class="region-card__title">Lips</h3>
+                    <p class="region-card__copy">Subtle volume, definition, hydration, and smoker's-line softening. Built around your natural lip shape — never an "Instagram lip".</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+                <a class="region-card" href="treatments/skin.html">
+                    <div class="region-card__icon" aria-hidden="true">◔</div>
+                    <h3 class="region-card__title">Skin</h3>
+                    <p class="region-card__copy">HydraFacial, Halo, MOXI, BBL Photofacial, microneedling, and Morpheus8. Long-term skin health built around your specific concerns.</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+                <a class="region-card" href="treatments/body.html">
+                    <div class="region-card__icon" aria-hidden="true">◕</div>
+                    <h3 class="region-card__title">Body &amp; Waist</h3>
+                    <p class="region-card__copy">CoolSculpting for stubborn fat, Emsculpt NEO for muscle building, and Emtone for skin laxity and cellulite.</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+                <a class="region-card" href="treatments/men.html">
+                    <div class="region-card__icon" aria-hidden="true">◖</div>
+                    <h3 class="region-card__title">Men's Services</h3>
+                    <p class="region-card__copy">Discreet, results-focused treatments tailored to male skin and facial structure — from hairline and jawline to body sculpting.</p>
+                    <span class="region-card__link">Explore area →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         MEET THE CLINIC
+         ========================================================= -->
+    <section class="section-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Meet the Clinic</span>
+                <h2>A team built around considered care.</h2>
+                <p>Aurum is led by a medical director and a clinical team with years of experience in aesthetic medicine. We work together on every case, and we&rsquo;re honest about what we recommend — and what we don&rsquo;t.</p>
             </div>
 
             <div class="card-grid card-grid--3">
-                <a href="injectables.html" class="card">
-                    <div class="card__media">
-                        <img src="assets/card-treatment-aesthetic-800x800.jpg" alt="">
-                    </div>
-                    <div class="card__body">
-                        <span class="card__kicker">Injectables</span>
-                        <h3 class="card__title">Subtle, considered, never overdone.</h3>
-                        <p class="card__copy">Anti-wrinkle treatments, dermal fillers, and skin boosters tailored to your facial structure and aesthetic goals.</p>
-                        <span class="card__link">Explore Injectables</span>
-                    </div>
-                </a>
+                <div class="team-card">
+                    <img class="team-card__photo" src="assets/portrait-medical-director-400x400.jpg" alt="Dr. Marisol Avila, MD — Medical Director">
+                    <h3 class="team-card__name">Dr. Marisol Avila, MD</h3>
+                    <p class="team-card__role">Medical Director</p>
+                    <p class="team-card__bio">Oversees every treatment plan at Aurum. Board-certified in family medicine with a fellowship in aesthetic medicine.</p>
+                </div>
+                <div class="team-card">
+                    <img class="team-card__photo" src="assets/portrait-nurse-injector-400x400.jpg" alt="Natasha Brennan, MSN, FNP-BC — Lead Nurse Injector">
+                    <h3 class="team-card__name">Natasha Brennan, MSN, FNP-BC</h3>
+                    <p class="team-card__role">Lead Nurse Injector</p>
+                    <p class="team-card__bio">Performs the majority of injectable treatments. Known for balanced, subtle outcomes and a calm, assessment-led approach.</p>
+                </div>
+                <div class="team-card">
+                    <img class="team-card__photo" src="assets/portrait-skin-specialist-400x400.jpg" alt="Eun-Ji Park, LE — Skin &amp; Laser Practitioner">
+                    <h3 class="team-card__name">Eun-Ji Park, LE</h3>
+                    <p class="team-card__role">Skin &amp; Laser Practitioner</p>
+                    <p class="team-card__bio">Leads skin and laser treatments with a long-term, evidence-led approach to skin health across all skin tones.</p>
+                </div>
+            </div>
 
-                <a href="skin-rejuvenation.html" class="card">
-                    <div class="card__media">
-                        <img src="assets/card-treatment-wide-800x600.jpg" alt="">
-                    </div>
-                    <div class="card__body">
-                        <span class="card__kicker">Skin Rejuvenation</span>
-                        <h3 class="card__title">Restore what time and sun have taken.</h3>
-                        <p class="card__copy">Advanced skin treatments designed to improve tone, texture, and clarity &mdash; from chemical peels to microneedling and beyond.</p>
-                        <span class="card__link">Explore Skin</span>
-                    </div>
-                </a>
-
-                <a href="laser-devices.html" class="card">
-                    <div class="card__media">
-                        <img src="assets/card-secondary-800x450.jpg" alt="">
-                    </div>
-                    <div class="card__body">
-                        <span class="card__kicker">Laser & Devices</span>
-                        <h3 class="card__title">Technology-led, results-driven.</h3>
-                        <p class="card__copy">Modern laser and device-based treatments for pigmentation, skin tightening, and lasting rejuvenation.</p>
-                        <span class="card__link">Explore Devices</span>
-                    </div>
-                </a>
+            <div class="text-center" style="margin-top: 2.5rem;">
+                <a href="about.html" class="cta-button cta-button--ghost">Meet the full team</a>
             </div>
         </div>
     </section>
 
-    <!-- ===================== PILLARS / WHY ===================== -->
+    <!-- =========================================================
+         HOW WE WORK
+         ========================================================= -->
     <section class="section-light">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Why Aurum</span>
-                <h2>An aesthetic clinic designed around you.</h2>
-                <p>We believe the best outcomes come from careful listening, individual treatment planning, and an unhurried approach.</p>
-            </div>
-
-            <div class="pillars">
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">✦</div>
-                    <h3 class="pillar__title">Tailored Approach</h3>
-                    <p class="pillar__copy">Every treatment plan is built around your facial structure, skin condition, and aesthetic goals. We never recommend treatment we don't believe is right for you.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">◇</div>
-                    <h3 class="pillar__title">Considered Care</h3>
-                    <p class="pillar__copy">From your first consultation to ongoing review appointments, our team takes time to understand you, explain options clearly, and answer questions without rushing.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">◈</div>
-                    <h3 class="pillar__title">Premium Environment</h3>
-                    <p class="pillar__copy">Our clinic is a calm, private, beautifully designed space &mdash; built to put you at ease from the moment you arrive and through every minute of your visit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== PROCESS / STEPS ===================== -->
-    <section class="section-soft">
         <div class="container">
             <div class="section-head">
                 <span class="eyebrow">How We Work</span>
                 <h2>Three steps, start to finish.</h2>
-                <p>Your journey with Aurum is structured, transparent, and centered on conversation at every stage.</p>
+                <p>Your journey with Aurum is structured, transparent, and centred on conversation at every stage.</p>
             </div>
 
-            <div class="steps">
-                <div class="step">
-                    <h3 class="step__title">Consultation</h3>
-                    <p class="step__copy">A relaxed conversation about your goals, history, and what you'd like to explore. We outline options clearly &mdash; including whether treatment is right for you right now.</p>
+            <div class="pillars">
+                <div class="pillar">
+                    <div class="pillar__step">01</div>
+                    <h3 class="pillar__title">Consultation</h3>
+                    <p class="pillar__copy">A relaxed conversation about your goals, your history, and what you&rsquo;d like to explore. We outline options clearly — including whether treatment is right for you right now.</p>
                 </div>
-                <div class="step">
-                    <h3 class="step__title">Treatment Plan</h3>
-                    <p class="step__copy">A personalised plan with clear pricing, anticipated outcomes, and a timeline that works with your life. Nothing you don't need.</p>
+                <div class="pillar">
+                    <div class="pillar__step">02</div>
+                    <h3 class="pillar__title">Treatment Plan</h3>
+                    <p class="pillar__copy">A personalised plan with clear pricing, anticipated outcomes, and a timeline that works with your life. Nothing you don&rsquo;t need, nothing you didn&rsquo;t ask for.</p>
                 </div>
-                <div class="step">
-                    <h3 class="step__title">Care & Follow-Up</h3>
-                    <p class="step__copy">We check in after every visit, support recovery where needed, and adjust the plan based on how your results develop over time.</p>
+                <div class="pillar">
+                    <div class="pillar__step">03</div>
+                    <h3 class="pillar__title">Care &amp; Follow-Up</h3>
+                    <p class="pillar__copy">We check in after every visit, support recovery where needed, and adjust the plan based on how your results develop over time.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===================== GLOWGAU PLACEHOLDER + CTA ===================== -->
-    <section class="section-light">
+    <!-- =========================================================
+         LOCATIONS — fictional Chicago addresses
+         ========================================================= -->
+    <section class="section-soft">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Visit Us</span>
+                <h2>Three Chicago studios.</h2>
+                <p>Our studios are private, unhurried, and designed to feel calm from the moment you walk in. Each one offers the full treatment menu.</p>
+            </div>
+
+            <div class="card-grid card-grid--3">
+                <div class="location-card">
+                    <h3 class="location-card__name">Old Town</h3>
+                    <p class="location-card__address">412 North Wells Street, Suite 5<br>Chicago, IL 60654</p>
+                    <p class="location-card__phone"><a href="tel:+13125550102">(312) 555-0102</a></p>
+                    <p class="location-card__note">Original flagship. Tuesday–Friday 10–7, Saturday 10–4.</p>
+                </div>
+                <div class="location-card">
+                    <h3 class="location-card__name">River North</h3>
+                    <p class="location-card__address">642 North Orleans Street, Suite 3<br>Chicago, IL 60654</p>
+                    <p class="location-card__phone"><a href="tel:+13125550115">(312) 555-0115</a></p>
+                    <p class="location-card__note">Inside Loop flagship. Tuesday–Friday 10–7, Saturday 10–4.</p>
+                </div>
+                <div class="location-card">
+                    <h3 class="location-card__name">Lincoln Park</h3>
+                    <p class="location-card__address">1820 North Clybourn Avenue, Suite 12<br>Chicago, IL 60614</p>
+                    <p class="location-card__phone"><a href="tel:+13125550148">(312) 555-0148</a></p>
+                    <p class="location-card__note">North-side studio. Tuesday–Friday 10–7, Saturday 10–4.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         GLOWGAU WIDGET PLACEHOLDER — front-and-center on home
+         ========================================================= -->
+    <section class="section-light" style="padding-top: var(--space-lg);">
         <div class="container">
             <div class="cta-banner">
-                <span class="eyebrow" style="color: var(--accent-soft);">Take the next step</span>
-                <h2>Begin with a conversation.</h2>
-                <p>Our team will respond personally to discuss your goals and walk you through what to expect. No pressure, just a clear first step.</p>
-
-                <div class="glowgau-placeholder" style="margin: 2rem auto; max-width: 580px; background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.20);">
-                    <span class="glowgau-placeholder__badge" style="background: transparent; color: var(--accent-soft); border-color: var(--accent-soft);">Glowgau</span>
-                    <h3 class="glowgau-placeholder__heading" style="color: #fff;">Glowgau AI clinic assistant demo will appear here.</h3>
-                    <p class="glowgau-placeholder__sub" style="color: rgba(255,255,255,0.65);">A built-in, conversational assistant that helps prospective clients ask questions, learn about treatment options, and request a consultation &mdash; 24/7.</p>
+                <span class="eyebrow" style="color: var(--accent-soft);">Chat With Us Anytime</span>
+                <h2>Have a question before booking?</h2>
+                <p>Our AI clinic assistant can answer questions about treatments, our approach, what to expect at a consultation, and more. Available 24/7 to help you explore your options — no pressure.</p>
+                <div id="glowgau-widget-mount"
+                     class="glowgau-placeholder glowgau-placeholder--inline"
+                     aria-label="Glowgau AI clinic assistant placeholder">
+                    <span class="glowgau-placeholder__badge">Glowgau</span>
+                    <h3 class="glowgau-placeholder__heading">Glowgau AI clinic assistant demo will appear here.</h3>
+                    <p class="glowgau-placeholder__sub">In the production build, this is a friendly, conversational widget that lets prospective clients ask questions about your treatments, share what they&rsquo;d like to explore, and request a consultation &mdash; day or night.</p>
                 </div>
-
-                <div class="cta-banner__actions">
+                <div class="cta-banner__actions" style="margin-top: 2rem;">
                     <a href="contact.html" class="cta-button cta-button--invert">Request a Consultation</a>
-                    <a href="treatments.html" class="cta-button cta-button--ghost">Browse Treatments</a>
+                    <a href="treatments/index.html" class="cta-button cta-button--ghost">Browse Treatments</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section class="section-alt">
+        <div class="container" style="max-width: 760px;">
+            <div class="section-head">
+                <span class="eyebrow">Common Questions</span>
+                <h2>What people ask before they book.</h2>
+                <p>A few of the questions our team hears most often. If yours isn&rsquo;t here, just ask the assistant above or reach out directly.</p>
+            </div>
+
+            <div class="faq">
+                <details class="faq-item">
+                    <summary>Do I need a referral?</summary>
+                    <div class="faq-item__body">
+                        <p>No referral is needed. You can request a consultation directly via our <a href="contact.html">contact page</a> or by calling one of our three locations. Our team will be in touch within one business day.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How much does a consultation cost?</summary>
+                    <div class="faq-item__body">
+                        <p>Initial consultations at Aurum are complimentary. They&rsquo;re an investment in understanding what you need &mdash; not a sales pitch. Any treatment pricing is discussed separately, with full transparency.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Will I look frozen or overdone?</summary>
+                    <div class="faq-item__body">
+                        <p>Our approach is deliberately conservative. We titrate doses carefully, follow up after every treatment, and adjust based on how your results develop. You should always look like yourself &mdash; just refreshed.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Are treatments safe across all skin tones?</summary>
+                    <div class="faq-item__body">
+                        <p>Many treatments work well across all skin tones, but some (notably certain laser wavelengths) carry higher risk for darker complexions. We&rsquo;ll always be honest about what&rsquo;s suitable for your skin and what isn&rsquo;t.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I finance my treatment?</summary>
+                    <div class="faq-item__body">
+                        <p>For treatment packages and larger plans we offer financing options through third-party providers. We&rsquo;ll walk you through this during your consultation &mdash; with no pressure to take it up.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
     <div class="container">
         <div class="site-footer__grid">
             <div>
                 <a href="index.html" class="site-footer__brand">Aurum</a>
-                <p class="site-footer__tagline">A premium aesthetic clinic crafted for clients who value considered care.</p>
+                <p class="site-footer__tagline">A considered aesthetic clinic in Chicago. Three studios serving Old Town, River North, and Lincoln Park.</p>
+                <p class="site-footer__address"><strong>Old Town:</strong> 412 N Wells St, Suite 5, Chicago, IL 60654<br>(312) 555-0102</p>
             </div>
             <div>
-                <h4>Visit</h4>
+                <h4>Treatments</h4>
                 <ul>
-                    <li><a href="treatments.html">Treatments</a></li>
-                    <li><a href="injectables.html">Injectables</a></li>
-                    <li><a href="skin-rejuvenation.html">Skin Rejuvenation</a></li>
-                    <li><a href="laser-devices.html">Laser & Devices</a></li>
+                    <li><a href="treatments/forehead-eyes.html">Forehead &amp; Eyes</a></li>
+                    <li><a href="treatments/cheeks-jawline.html">Cheeks &amp; Jawline</a></li>
+                    <li><a href="treatments/lips.html">Lips</a></li>
+                    <li><a href="treatments/skin.html">Skin</a></li>
+                    <li><a href="treatments/body.html">Body</a></li>
+                    <li><a href="treatments/men.html">Men&rsquo;s Services</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Clinic</h4>
                 <ul>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Book a Consultation</a></li>
+                    <li><a href="contact.html">Request a Consultation</a></li>
                     <li><a href="disclaimer.html">About this Demo</a></li>
                 </ul>
             </div>
@@ -229,10 +326,10 @@
                     <li>10:00 – 19:00</li>
                     <li>Saturday</li>
                     <li>10:00 – 16:00</li>
+                    <li>Sun &amp; Mon · closed</li>
                 </ul>
             </div>
         </div>
-
         <div class="site-footer__disclaimer">
             <span class="site-footer__disclaimer-icon" aria-hidden="true">i</span>
             <div>
@@ -241,7 +338,6 @@
                 <a href="disclaimer.html" style="color: var(--accent-soft); margin-left: 0.5rem;">Read more →</a>
             </div>
         </div>
-
         <div class="site-footer__bottom">
             <span>© 2026 Aurum Aesthetics Demo Clinic · Powered by Glowgau demo</span>
             <span>Website concept &middot; Built as a Glowgau demo</span>

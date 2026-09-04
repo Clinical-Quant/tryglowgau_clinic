@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Request a consultation with Aurum Aesthetics. Talk through your goals with our team — and use our AI clinic assistant for answers anytime.">
-    <title>Contact & Book a Consultation — Aurum Aesthetics</title>
+    <meta name="description" content="Request a consultation at Aurum Aesthetics. Three Chicago locations: Old Town (N Wells St), River North (N Orleans St), and Lincoln Park (N Clybourn Ave). Talk to our AI clinic assistant 24/7.">
+    <title>Contact &amp; Book a Consultation — Aurum Aesthetics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="canonical" href="https://tryglowgau.com/contact.html">
@@ -26,7 +26,8 @@
 
         <nav id="primary-nav" class="main-nav" aria-label="Primary">
             <a href="index.html">Home</a>
-            <a href="treatments.html">Treatments</a>
+            <a href="treatments/index.html">Treatments</a>
+            <a href="shop.html">Products</a>
             <a href="about.html">About</a>
             <a href="contact.html" class="is-current">Contact</a>
             <a href="disclaimer.html">About this Demo</a>
@@ -56,10 +57,9 @@
             <div class="section-head">
                 <span class="eyebrow">Chat With Us Anytime</span>
                 <h2>Talk to our AI clinic assistant.</h2>
-                <p>Ask questions about treatments, our approach, what to expect at a consultation &mdash; anything. Our AI assistant is available 24/7 to help you understand your options.</p>
+                <p>Ask questions about treatments, our approach, what to expect at a consultation &mdash; anything. Our AI assistant is available 24/7 to help you understand your options before you book.</p>
             </div>
 
-            <!-- Glowgau widget will mount here. -->
             <div id="glowgau-widget-mount"
                  class="glowgau-placeholder"
                  aria-label="Glowgau AI clinic assistant placeholder"
@@ -93,16 +93,29 @@
 
                 <div class="form-row">
                     <label for="phone">Phone (optional)</label>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 (555) 123-4567">
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(312) 555-0123">
+                </div>
+
+                <div class="form-row">
+                    <label for="location">Preferred location</label>
+                    <select id="location" name="location">
+                        <option value="">No preference / closest</option>
+                        <option>Old Town &middot; 412 N Wells St</option>
+                        <option>River North &middot; 642 N Orleans St</option>
+                        <option>Lincoln Park &middot; 1820 N Clybourn Ave</option>
+                    </select>
                 </div>
 
                 <div class="form-row">
                     <label for="interest">I&rsquo;m interested in</label>
                     <select id="interest" name="interest">
                         <option value="">Choose a treatment area</option>
-                        <option>Injectables</option>
-                        <option>Skin Rejuvenation</option>
-                        <option>Laser & Devices</option>
+                        <option>Forehead &amp; Eyes (Botox, Dysport, Xeomin)</option>
+                        <option>Cheeks &amp; Jawline (Fillers, Kybella, Masseter)</option>
+                        <option>Lips</option>
+                        <option>Skin (HydraFacial, Halo, MOXI, BBL, Microneedling, Morpheus8)</option>
+                        <option>Body (CoolSculpting, Emsculpt NEO, Emtone)</option>
+                        <option>Men&rsquo;s Services</option>
                         <option>A combination &mdash; not sure yet</option>
                         <option>Just exploring for now</option>
                     </select>
@@ -124,29 +137,33 @@
         </div>
     </section>
 
+    <!-- ============== Locations — 3 fictional Chicago studios ============== -->
     <section class="section-soft">
         <div class="container">
             <div class="section-head">
-                <span class="eyebrow">Visit</span>
-                <h2>Plan your visit.</h2>
-                <p>Our clinic is private and unhurried. Consultations are by appointment only.</p>
+                <span class="eyebrow">Visit Us</span>
+                <h2>Three Chicago studios.</h2>
+                <p>Our studios are private, unhurried, and designed to feel calm from the moment you walk in. Each one offers the full treatment menu.</p>
             </div>
 
-            <div class="pillars">
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">⌖</div>
-                    <h3 class="pillar__title">Location</h3>
-                    <p class="pillar__copy">Address, parking, and transit notes will be provided when you book. Our clinic is in a quiet, considered setting &mdash; designed for calm.</p>
+            <div class="card-grid card-grid--3">
+                <div class="location-card">
+                    <h3 class="location-card__name">Old Town</h3>
+                    <p class="location-card__address">412 North Wells Street, Suite 5<br>Chicago, IL 60654</p>
+                    <p class="location-card__phone"><a href="tel:+13125550102">(312) 555-0102</a></p>
+                    <p class="location-card__note">Original flagship. Tuesday–Friday 10–7, Saturday 10–4.</p>
                 </div>
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">◷</div>
-                    <h3 class="pillar__title">Hours</h3>
-                    <p class="pillar__copy">Tuesday – Friday: 10:00 – 19:00<br>Saturday: 10:00 – 16:00<br>Sunday &amp; Monday: closed</p>
+                <div class="location-card">
+                    <h3 class="location-card__name">River North</h3>
+                    <p class="location-card__address">642 North Orleans Street, Suite 3<br>Chicago, IL 60654</p>
+                    <p class="location-card__phone"><a href="tel:+13125550115">(312) 555-0115</a></p>
+                    <p class="location-card__note">Inside Loop flagship. Tuesday–Friday 10–7, Saturday 10–4.</p>
                 </div>
-                <div class="pillar">
-                    <div class="pillar__icon" aria-hidden="true">☏</div>
-                    <h3 class="pillar__title">Direct</h3>
-                    <p class="pillar__copy">Phone, email, and a private client portal access point will be provided when you book your consultation with us.</p>
+                <div class="location-card">
+                    <h3 class="location-card__name">Lincoln Park</h3>
+                    <p class="location-card__address">1820 North Clybourn Avenue, Suite 12<br>Chicago, IL 60614</p>
+                    <p class="location-card__phone"><a href="tel:+13125550148">(312) 555-0148</a></p>
+                    <p class="location-card__note">North-side studio. Tuesday–Friday 10–7, Saturday 10–4.</p>
                 </div>
             </div>
         </div>
@@ -160,7 +177,7 @@
                 <details class="faq-item">
                     <summary>What happens after I request a consultation?</summary>
                     <div class="faq-item__body">
-                        <p>Our team will be in touch within one business day to confirm a time that works for you, share what to expect, and answer any quick questions before your visit.</p>
+                        <p>Our team will be in touch within one business day to confirm a time that works for you, share what to expect, and answer any quick questions before your visit. You&rsquo;ll hear from Sofia, our client coordinator.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -173,6 +190,12 @@
                     <summary>Is there a cost for the consultation?</summary>
                     <div class="faq-item__body">
                         <p>We don&rsquo;t charge a fee for our initial consultations &mdash; they&rsquo;re an investment in understanding what you need. Any treatment pricing is discussed separately, with full transparency.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Which location should I pick?</summary>
+                    <div class="faq-item__body">
+                        <p>All three studios offer the full menu. Old Town is our original and tends to book first; River North is closest to the Loop; Lincoln Park serves the North Side. Choose whichever is most convenient.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -198,23 +221,27 @@
         <div class="site-footer__grid">
             <div>
                 <a href="index.html" class="site-footer__brand">Aurum</a>
-                <p class="site-footer__tagline">A premium aesthetic clinic crafted for clients who value considered care.</p>
+                <p class="site-footer__tagline">A considered aesthetic clinic in Chicago. Three studios serving Old Town, River North, and Lincoln Park.</p>
+                <p class="site-footer__address"><strong>Old Town:</strong> 412 N Wells St, Suite 5, Chicago, IL 60654<br>(312) 555-0102</p>
             </div>
             <div>
-                <h4>Visit</h4>
+                <h4>Treatments</h4>
                 <ul>
-                    <li><a href="treatments.html">Treatments</a></li>
-                    <li><a href="injectables.html">Injectables</a></li>
-                    <li><a href="skin-rejuvenation.html">Skin Rejuvenation</a></li>
-                    <li><a href="laser-devices.html">Laser & Devices</a></li>
+                    <li><a href="treatments/forehead-eyes.html">Forehead &amp; Eyes</a></li>
+                    <li><a href="treatments/cheeks-jawline.html">Cheeks &amp; Jawline</a></li>
+                    <li><a href="treatments/lips.html">Lips</a></li>
+                    <li><a href="treatments/skin.html">Skin</a></li>
+                    <li><a href="treatments/body.html">Body</a></li>
+                    <li><a href="treatments/men.html">Men&rsquo;s Services</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Clinic</h4>
                 <ul>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Book a Consultation</a></li>
+                    <li><a href="contact.html">Request a Consultation</a></li>
                     <li><a href="disclaimer.html">About this Demo</a></li>
                 </ul>
             </div>
@@ -225,6 +252,7 @@
                     <li>10:00 – 19:00</li>
                     <li>Saturday</li>
                     <li>10:00 – 16:00</li>
+                    <li>Sun &amp; Mon · closed</li>
                 </ul>
             </div>
         </div>
