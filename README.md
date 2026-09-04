@@ -58,12 +58,23 @@ Deployed to **Cloudflare Workers + Pages** from this repo:
 
 ## Where the Glowgau widget goes
 
-The Glowgau widget placeholder lives in `index.html` and `contact.html` at elements with `id="glowgau-widget-mount"`. When the COO/CTO profile provides the real snippet, replace each placeholder block with:
+The Glowgau widget will be installed as a **single `<script>` tag in the site header** at demo time, not as an inline placeholder section. The widget is supplied by the COO/CTO profile.
 
-```html
-<!-- BEGIN GLOWGAU WIDGET -->
-<script src="..." async></script>
-<!-- END GLOWGAU WIDGET -->
-```
+When the snippet is ready, it will be added to:
+
+- `index.html`
+- `treatments/index.html`
+- `treatments/forehead-eyes.html`
+- `treatments/cheeks-jawline.html`
+- `treatments/lips.html`
+- `treatments/skin.html`
+- `treatments/body.html`
+- `treatments/men.html`
+- `about.html`
+- `shop.html`
+- `contact.html`
+- `disclaimer.html`
+
+…most likely via a small shared include (e.g. `partials/glowgau-widget.html`) so the snippet only needs to be inserted in one place.
 
 **Never invent widget IDs or tokens.** Always source from the COO/CTO profile.
