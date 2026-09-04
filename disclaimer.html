@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A note about Aurum Aesthetics Demo Clinic — what this website is, what it isn't, and why it exists.">
+    <title>Demo Disclaimer — Aurum Aesthetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://tryglowgau.com/disclaimer.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a href="index.html" class="site-logo" aria-label="Aurum Aesthetics Demo Clinic">
+            Aurum
+            <span class="site-logo__demo-tag">Demo Clinic</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="primary-nav" class="main-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="treatments.html">Treatments</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="disclaimer.html" class="is-current">About this Demo</a>
+        </nav>
+
+        <a href="contact.html" class="cta-button header-cta">Request a Consultation</a>
+    </div>
+</header>
+
+<main id="main">
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Important</span>
+            <h1>A note about this website.</h1>
+            <p>Aurum Aesthetics is a <strong>demo clinic website</strong>. Please read this page carefully before drawing conclusions about the services, results, or team it portrays.</p>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="disclaimer-page">
+
+                <div class="callout">
+                    <p><strong>This is a demo clinic website used to demonstrate Glowgau&rsquo;s AI clinic assistant.</strong> It is not a real medical practice and does not provide medical advice.</p>
+                </div>
+
+                <h2>What this site is</h2>
+                <p>This website is a demonstration of how an aesthetic clinic could use Glowgau&rsquo;s AI clinic assistant to support prospective clients &mdash; answering common questions about treatments, gathering information about client goals, and helping visitors request a consultation through a natural, conversational interface.</p>
+                <p>The website itself is built as a polished reference example: an aesthetic clinic experience a real clinic could use as inspiration, with the Glowgau assistant embedded in place of a static contact form.</p>
+
+                <h2>What this site is not</h2>
+                <ul>
+                    <li><strong>It is not a real medical practice.</strong> No clinic operates at this location; no treatments are performed; no client is seen by a practitioner.</li>
+                    <li><strong>It does not provide medical advice.</strong> Nothing on this website should be taken as medical advice, diagnosis, or a recommendation for any specific treatment.</li>
+                    <li><strong>The &ldquo;clinic team&rdquo; members shown are illustrative roles.</strong> Names, monograms, and roles are placeholders for demo purposes and do not represent real, qualified practitioners.</li>
+                    <li><strong>No treatments have been performed on real clients.</strong> Where the site describes treatments, it describes categories of treatment &mdash; not verified outcomes for any individual.</li>
+                    <li><strong>No testimonials are shown.</strong> We avoid fabricated reviews entirely; a real clinic&rsquo;s reviews would never be invented for marketing.</li>
+                </ul>
+
+                <h2>About the Glowgau widget</h2>
+                <p>On this site, a placeholder appears where the Glowgau AI clinic assistant would normally load. The widget is the centerpiece of how Glowgau helps clinics convert more website visitors into consultations while giving prospective clients a friendly, knowledgeable first touchpoint.</p>
+                <p>To learn more about Glowgau, please visit <a href="https://www.glowgau.com/" rel="noopener external">glowgau.com</a>.</p>
+
+                <h2>Why this demo exists</h2>
+                <p>The purpose of this site is to let prospective clinics see Glowgau working in a real-looking environment &mdash; to feel the rhythm of how the assistant behaves and how it would integrate into a polished, professional clinic brand.</p>
+
+                <h2>What you can do here</h2>
+                <ul>
+                    <li>Browse the pages to understand how a Glowgau-supported clinic site could feel.</li>
+                    <li>Imagine the Glowgau assistant powered on, and how it would answer your questions about treatment categories.</li>
+                    <li>Visit <a href="https://www.glowgau.com/" rel="noopener external">glowgau.com</a> if you&rsquo;re evaluating Glowgau for your own clinic.</li>
+                </ul>
+
+                <p style="margin-top: 3rem;"><a href="index.html" class="cta-button cta-button--ghost">&larr; Back to Home</a></p>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer__disclaimer">
+            <span class="site-footer__disclaimer-icon" aria-hidden="true">i</span>
+            <div>
+                <strong style="color: #fff;">Demo Notice.</strong>
+                This is a demo clinic website used to demonstrate Glowgau&rsquo;s AI clinic assistant. It is not a real medical practice and does not provide medical advice.
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <span>© 2026 Aurum Aesthetics Demo Clinic · Powered by Glowgau demo</span>
+            <span><a href="disclaimer.html">About this Demo</a></span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('.nav-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const nav = document.getElementById('primary-nav');
+            const isOpen = nav.classList.toggle('is-open');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    });
+</script>
+
+</body>
+</html>
